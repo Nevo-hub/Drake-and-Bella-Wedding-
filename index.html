@@ -1293,60 +1293,6 @@
       border-top: 1px solid rgba(212, 175, 55, 0.2);
     }
 
-    /* Music Player */
-    .music-player {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(20px);
-      border-radius: 60px;
-      padding: 15px 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      z-index: 90;
-      transition: all 0.3s ease;
-    }
-
-    .music-player:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
-    }
-
-    .music-toggle {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--gold), var(--rose-gold));
-      border: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
-    }
-
-    .music-toggle:hover {
-      transform: scale(1.1);
-    }
-
-    .music-info {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .music-title {
-      font-weight: 600;
-      color: var(--dark);
-      font-size: 0.9rem;
-    }
-
-    .music-artist {
-      color: var(--muted);
-      font-size: 0.8rem;
-    }
 
     /* Animations */
     .fade-in {
@@ -1629,80 +1575,168 @@
             <h3 data-translate="story-title-1">First Meeting</h3>
             <p data-translate="story-desc-1">Our paths crossed at a coffee shop in downtown. What started as a chance encounter over spilled coffee turned into hours of conversation that felt like minutes.</p>
           </div>
-          <div class="timeline-image slide-in-right">
-            <div style="background: linear-gradient(135deg, #d4af37, #e8c4a0); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
-              Photo Placeholder
-            </div>
-          </div>
-          <div class="timeline-dot"></div>
-        </div>
-        
-        <div class="timeline-item">
-          <div class="timeline-content slide-in-right">
-            <p class="timeline-date" data-translate="story-date-2">Summer 2021</p>
-            <h3 data-translate="story-title-2">First Adventure</h3>
-            <p data-translate="story-desc-2">We took our first big trip together to Italy. Between the pasta, wine, and breathtaking views, we knew we had found something special in each other.</p>
-          </div>
-          <div class="timeline-image slide-in-left">
-            <div style="background: linear-gradient(135deg, #e8c4a0, #d4af37); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
-              Photo Placeholder
-            </div>
-          </div>
-          <div class="timeline-dot"></div>
-        </div>
-        
-        <div class="timeline-item">
-          <div class="timeline-content slide-in-left">
-            <p class="timeline-date" data-translate="story-date-3">Winter 2025</p>
-            <h3 data-translate="story-title-3">The Proposal</h3>
-            <p data-translate="story-desc-3">On a snowy evening under the stars, Drake got down on one knee. With happy tears and a resounding "yes," our forever began.</p>
-          </div>
-          <div class="timeline-image slide-in-right">
-            <div style="background: linear-gradient(135deg, #d4af37, #e8c4a0); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
-              Photo Placeholder
-            </div>
-          </div>
-          <div class="timeline-dot"></div>
-        </div>
-      </div>
+  <div class="timeline-image slide-in-right">
+    <div
+      style="
+        background-image:
+          linear-gradient(135deg, rgba(212,175,55,0.28), rgba(232,196,160,0.28)),
+          url('Drake.jpg');
+        background-size: cover, contain;
+        background-position: center, center;
+        background-repeat: no-repeat, no-repeat;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+      ">
     </div>
-  </section>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+        
+<div class="timeline-item">
+  <div class="timeline-content slide-in-right">
+    <p class="timeline-date" data-translate="story-date-2">Summer 2021</p>
+    <h3 data-translate="story-title-2">First Adventure</h3>
+    <p data-translate="story-desc-2">We took our first big trip together to Florence.</p>
+  </div>
+  <div class="timeline-image slide-in-right">
+    <div
+      style="
+        background-image:
+          linear-gradient(135deg, rgba(212,175,55,0.28), rgba(232,196,160,0.28)),
+          url('Family%20Florence%20tirp.jpg');
+        background-size: cover, contain;     /* gradient covers, photo fits */
+        background-position: center, center; /* tweak second value to pan the photo */
+        background-repeat: no-repeat, no-repeat;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+      ">
+    </div>
+  </div>
+</div>
+<div class="timeline-dot"></div>
+</div>
 
-  <!-- Photo Gallery -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-title fade-in">
-        <h2 data-translate="gallery-title">Our Moments</h2>
+<div class="timeline-item">
+  <div class="timeline-content slide-in-left">
+    <p class="timeline-date" data-translate="story-date-3">Winter 2025</p>
+    <h3 data-translate="story-title-3">The Proposal</h3>
+    <p data-translate="story-desc-3">On a snowy evening under the stars, Drake got down on one knee. With happy tears and a resounding "yes," our forever began.</p>
+  </div>
+  <div class="timeline-image slide-in-right">
+    <div
+      style="
+        background-image:
+          linear-gradient(135deg, rgba(212,175,55,0.28), rgba(232,196,160,0.28)),
+          url('Drake%20and%20BellaMoment.jpg');
+        background-size: cover, contain;
+        background-position: center, center;
+        background-repeat: no-repeat, no-repeat;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+      ">
+    </div>
+  </div>
+</div>
+<div class="timeline-dot"></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Photo Gallery -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2 data-translate="gallery-title">Our Moments</h2>
+    </div>
+
+    <div class="gallery">
+      <!-- 1) Our first date -->
+      <div class="gallery-item fade-in">
+        <div
+          style="
+            background-image:
+              linear-gradient(135deg, rgba(212,175,55,0.28), rgba(232,196,160,0.28)),
+              url('4%20Shaubs.jpg');
+            background-size: cover, contain;
+            background-position: center, center;   /* e.g., center 30% to lift subject */
+            background-repeat: no-repeat, no-repeat;
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 12px;
+          ">
+        </div>
+        <div class="gallery-overlay">
+          <p class="gallery-caption" data-translate="gallery-caption-1">4 Shaubs!</p>
+        </div>
       </div>
-      
-      <div class="gallery">
-        <div class="gallery-item fade-in">
-          <div style="background: linear-gradient(135deg, #d4af37, #e8c4a0); height: 100%;"></div>
-          <div class="gallery-overlay">
-            <p class="gallery-caption" data-translate="gallery-caption-1">Our first date</p>
-          </div>
+
+      <!-- 2) Florence trip -->
+      <div class="gallery-item fade-in">
+        <div
+          style="
+            background-image:
+              linear-gradient(135deg, rgba(232,196,160,0.28), rgba(247,231,206,0.28)),
+              url('Florence%20tirp.jpg');
+            background-size: cover, contain;
+            background-position: center, center;
+            background-repeat: no-repeat, no-repeat;
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 12px;
+          ">
         </div>
-        <div class="gallery-item fade-in">
-          <div style="background: linear-gradient(135deg, #e8c4a0, #f7e7ce); height: 100%;"></div>
-          <div class="gallery-overlay">
-            <p class="gallery-caption" data-translate="gallery-caption-2">Vacation in Paris</p>
-          </div>
+        <div class="gallery-overlay">
+          <p class="gallery-caption" data-translate="gallery-caption-2">Florence trip</p>
         </div>
-        <div class="gallery-item fade-in">
-          <div style="background: linear-gradient(135deg, #f7e7ce, #d4af37); height: 100%;"></div>
-          <div class="gallery-overlay">
-            <p class="gallery-caption" data-translate="gallery-caption-3">Engagement party</p>
-          </div>
+      </div>
+
+      <!-- 3) Sisters -->
+      <div class="gallery-item fade-in">
+        <div
+          style="
+            background-image:
+              linear-gradient(135deg, rgba(247,231,206,0.28), rgba(212,175,55,0.28)),
+              url('Bella%20and%20sister%20Moment.jpg');
+            background-size: cover, contain;
+            background-position: center, center;
+            background-repeat: no-repeat, no-repeat;
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 12px;
+          ">
         </div>
-        <div class="gallery-item fade-in">
-          <div style="background: linear-gradient(135deg, #d4af37, #e8c4a0); height: 100%;"></div>
-          <div class="gallery-overlay">
-            <p class="gallery-caption" data-translate="gallery-caption-4">Weekend getaway</p>
-          </div>
+        <div class="gallery-overlay">
+          <p class="gallery-caption" data-translate="gallery-caption-3">Sisters</p>
+        </div>
+      </div>
+
+      <!-- 4) Brothers -->
+      <div class="gallery-item fade-in">
+        <div
+          style="
+            background-image:
+              linear-gradient(135deg, rgba(212,175,55,0.28), rgba(232,196,160,0.28)),
+              url('Drake%20and%20Dalton%20Moment.jpg');
+            background-size: cover, contain;
+            background-position: center, center;
+            background-repeat: no-repeat, no-repeat;
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 12px;
+          ">
+        </div>
+        <div class="gallery-overlay">
+          <p class="gallery-caption" data-translate="gallery-caption-4">Brothers</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+
+</section>
 
   <!-- Schedule -->
   <section id="schedule" class="section section-dark">
@@ -1938,14 +1972,7 @@
     </div>
   </footer>
 
-  <!-- Music Player -->
-  <div class="music-player">
-    <button class="music-toggle" id="musicToggle">▶️</button>
-    <div class="music-info">
-      <p class="music-title">Perfect</p>
-      <p class="music-artist">Ed Sheeran</p>
-    </div>
-  </div>
+
 
   <script>
     // Translations
@@ -2436,18 +2463,7 @@
       });
     }
 
-    // Music Player
-    function initMusicPlayer() {
-      const musicToggle = document.getElementById('musicToggle');
-      let isPlaying = false;
-      
-      musicToggle.addEventListener('click', () => {
-        isPlaying = !isPlaying;
-        musicToggle.textContent = isPlaying ? '⏸️' : '▶️';
-        // Audio functionality would be implemented here
-      });
-    }
-    
+
   </script>
 </body>
 </html>
