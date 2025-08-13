@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#d4af37">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Drake & Bella – Forever Begins</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,11 +31,13 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      -webkit-tap-highlight-color: transparent;
     }
 
     html {
       scroll-behavior: smooth;
       overflow-x: hidden;
+      -webkit-text-size-adjust: 100%;
     }
 
     body {
@@ -42,6 +47,9 @@
       line-height: 1.6;
       overflow-x: hidden;
       position: relative;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      touch-action: pan-y;
     }
 
     /* Custom Cursor */
@@ -151,6 +159,8 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       display: flex;
       gap: 5px;
+      -webkit-user-select: none;
+      user-select: none;
     }
 
     .lang-btn {
@@ -163,6 +173,7 @@
       transition: all 0.3s ease;
       font-weight: 500;
       font-size: 14px;
+      -webkit-tap-highlight-color: transparent;
     }
 
     .lang-btn.active {
@@ -181,6 +192,7 @@
       z-index: 100;
       transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
       padding: 20px 0;
+      transform: translateY(0);
     }
 
     .site-header.scrolled {
@@ -245,6 +257,9 @@
       position: relative;
       transition: color 0.3s ease;
       padding: 5px 0;
+      -webkit-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
     }
 
     .site-header.scrolled .nav-link {
@@ -279,6 +294,9 @@
       font-weight: 600;
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+      -webkit-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
     }
 
     .nav-rsvp:hover {
@@ -564,6 +582,11 @@
       box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
       position: relative;
       overflow: hidden;
+      -webkit-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      cursor: pointer;
+      border: none;
     }
 
     .btn-primary::before {
@@ -1138,6 +1161,11 @@
       cursor: pointer;
       transition: all 0.4s ease;
       box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+      -webkit-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-appearance: none;
+      appearance: none;
     }
 
     .btn-submit:hover {
@@ -1570,6 +1598,9 @@
   <!-- Hero Section -->
   <section id="hero" class="hero">
     <div class="hero-bg">
+      <!-- To add hero background image: Uncomment below and add your image path -->
+      <!-- <img src="path/to/hero-background.jpg" alt="Hero Background" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3;"> -->
+      <!-- Go to Section: HERO BACKGROUND and remove the div below -->
       <div class="hero-bg-image"></div>
     </div>
     
@@ -1630,6 +1661,9 @@
             <p data-translate="story-desc-1">Our paths crossed at a coffee shop in downtown. What started as a chance encounter over spilled coffee turned into hours of conversation that felt like minutes.</p>
           </div>
           <div class="timeline-image slide-in-right">
+            <!-- To add image: Uncomment below and add your image path -->
+            <!-- <img src="path/to/first-meeting.jpg" alt="First Meeting"> -->
+            <!-- Go to Section: OUR STORY IMAGE 1 and remove placeholder div below -->
             <div style="background: linear-gradient(135deg, #d4af37, #e8c4a0); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
               Photo Placeholder
             </div>
@@ -1644,6 +1678,9 @@
             <p data-translate="story-desc-2">We took our first big trip together to Italy. Between the pasta, wine, and breathtaking views, we knew we had found something special in each other.</p>
           </div>
           <div class="timeline-image slide-in-left">
+            <!-- To add image: Uncomment below and add your image path -->
+            <!-- <img src="path/to/first-adventure.jpg" alt="First Adventure"> -->
+            <!-- Go to Section: OUR STORY IMAGE 2 and remove placeholder div below -->
             <div style="background: linear-gradient(135deg, #e8c4a0, #d4af37); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
               Photo Placeholder
             </div>
@@ -1658,6 +1695,9 @@
             <p data-translate="story-desc-3">On a snowy evening under the stars, Drake got down on one knee. With happy tears and a resounding "yes," our forever began.</p>
           </div>
           <div class="timeline-image slide-in-right">
+            <!-- To add image: Uncomment below and add your image path -->
+            <!-- <img src="path/to/proposal.jpg" alt="The Proposal"> -->
+            <!-- Go to Section: OUR STORY IMAGE 3 and remove placeholder div below -->
             <div style="background: linear-gradient(135deg, #d4af37, #e8c4a0); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
               Photo Placeholder
             </div>
@@ -1677,24 +1717,36 @@
       
       <div class="gallery">
         <div class="gallery-item fade-in">
+          <!-- To add image: Uncomment below and add your image path -->
+          <!-- <img src="path/to/gallery-1.jpg" alt="Our first date"> -->
+          <!-- Go to Section: GALLERY IMAGE 1 and remove placeholder div below -->
           <div style="background: linear-gradient(135deg, #d4af37, #e8c4a0); height: 100%;"></div>
           <div class="gallery-overlay">
             <p class="gallery-caption" data-translate="gallery-caption-1">Our first date</p>
           </div>
         </div>
         <div class="gallery-item fade-in">
+          <!-- To add image: Uncomment below and add your image path -->
+          <!-- <img src="path/to/gallery-2.jpg" alt="Vacation in Paris"> -->
+          <!-- Go to Section: GALLERY IMAGE 2 and remove placeholder div below -->
           <div style="background: linear-gradient(135deg, #e8c4a0, #f7e7ce); height: 100%;"></div>
           <div class="gallery-overlay">
             <p class="gallery-caption" data-translate="gallery-caption-2">Vacation in Paris</p>
           </div>
         </div>
         <div class="gallery-item fade-in">
+          <!-- To add image: Uncomment below and add your image path -->
+          <!-- <img src="path/to/gallery-3.jpg" alt="Engagement party"> -->
+          <!-- Go to Section: GALLERY IMAGE 3 and remove placeholder div below -->
           <div style="background: linear-gradient(135deg, #f7e7ce, #d4af37); height: 100%;"></div>
           <div class="gallery-overlay">
             <p class="gallery-caption" data-translate="gallery-caption-3">Engagement party</p>
           </div>
         </div>
         <div class="gallery-item fade-in">
+          <!-- To add image: Uncomment below and add your image path -->
+          <!-- <img src="path/to/gallery-4.jpg" alt="Weekend getaway"> -->
+          <!-- Go to Section: GALLERY IMAGE 4 and remove placeholder div below -->
           <div style="background: linear-gradient(135deg, #d4af37, #e8c4a0); height: 100%;"></div>
           <div class="gallery-overlay">
             <p class="gallery-caption" data-translate="gallery-caption-4">Weekend getaway</p>
@@ -1752,6 +1804,9 @@
       
       <div class="venue-container">
         <div class="venue-map fade-in">
+          <!-- To add interactive map: Uncomment below and add your Google Maps embed code -->
+          <!-- <iframe src="https://www.google.com/maps/embed?..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          <!-- Go to Section: VENUE MAP and remove placeholder div below -->
           <div style="height: 100%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: #999;">
             Interactive Map Placeholder
           </div>
@@ -2154,9 +2209,12 @@
     let currentLang = 'en';
     const WEDDING_DATE = new Date('2026-10-03T15:00:00');
     const PASSWORD = 'password';
+    let isMobile = false;
+    let isIOS = false;
 
     // Initialize
     document.addEventListener('DOMContentLoaded', function() {
+      detectDevice();
       initLoadingScreen();
       initLanguageToggle();
       initPasswordGate();
@@ -2168,13 +2226,29 @@
       initForms();
       initAnimations();
       initMusicPlayer();
+      initTouchInteractions();
+      optimizeForMobile();
     });
+
+    // Detect Device
+    function detectDevice() {
+      isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+      
+      if (isMobile) {
+        document.body.classList.add('mobile-device');
+      }
+      if (isIOS) {
+        document.body.classList.add('ios-device');
+      }
+    }
 
     // Loading Screen
     function initLoadingScreen() {
+      const loadTime = isMobile ? 1000 : 1500;
       setTimeout(() => {
         document.getElementById('loadingScreen').classList.add('loaded');
-      }, 1500);
+      }, loadTime);
     }
 
     // Language Toggle
@@ -2187,6 +2261,11 @@
           btn.classList.add('active');
           currentLang = btn.dataset.lang;
           updateLanguage();
+          
+          // Haptic feedback for mobile
+          if (isMobile && navigator.vibrate) {
+            navigator.vibrate(10);
+          }
         });
       });
     }
@@ -2207,7 +2286,7 @@
       });
     }
 
-    // Password Gate
+    // Password Gate - Enhanced for Mobile
     function initPasswordGate() {
       const gate = document.getElementById('gate');
       const gateSubmit = document.getElementById('gateSubmit');
@@ -2219,13 +2298,28 @@
         gate.classList.add('hidden');
       }
       
+      // Auto-focus on desktop only
+      if (!isMobile && gatePassword) {
+        gatePassword.focus();
+      }
+      
       gateSubmit.addEventListener('click', () => {
         if (gatePassword.value === PASSWORD) {
           sessionStorage.setItem('authenticated', 'true');
           gate.classList.add('hidden');
+          
+          // Haptic feedback
+          if (isMobile && navigator.vibrate) {
+            navigator.vibrate([50, 50, 50]);
+          }
         } else {
           gateError.textContent = currentLang === 'en' ? 'Incorrect password' : 'Contraseña incorrecta';
           gateError.style.display = 'block';
+          
+          // Error vibration
+          if (isMobile && navigator.vibrate) {
+            navigator.vibrate([100, 50, 100]);
+          }
         }
       });
       
@@ -2236,7 +2330,7 @@
       });
     }
 
-    // Countdown
+    // Countdown - Optimized for Mobile
     function initCountdown() {
       function updateCountdown() {
         const now = new Date();
@@ -2256,27 +2350,56 @@
       }
       
       updateCountdown();
-      setInterval(updateCountdown, 1000);
+      // Reduce update frequency on mobile to save battery
+      const interval = isMobile ? 2000 : 1000;
+      setInterval(updateCountdown, interval);
     }
 
-    // Scroll Effects
+    // Scroll Effects - Enhanced for Mobile
     function initScrollEffects() {
       const header = document.getElementById('header');
+      let lastScrollY = 0;
+      let ticking = false;
       
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+      function updateHeader() {
+        const scrollY = window.scrollY;
+        
+        if (scrollY > 50) {
           header.classList.add('scrolled');
         } else {
           header.classList.remove('scrolled');
         }
-      });
+        
+        // Hide/show header on mobile scroll
+        if (isMobile) {
+          if (scrollY > lastScrollY && scrollY > 100) {
+            header.style.transform = 'translateY(-100%)';
+          } else {
+            header.style.transform = 'translateY(0)';
+          }
+        }
+        
+        lastScrollY = scrollY;
+        ticking = false;
+      }
+      
+      function requestTick() {
+        if (!ticking) {
+          requestAnimationFrame(updateHeader);
+          ticking = true;
+        }
+      }
+      
+      // Use optimized scroll listener
+      window.addEventListener('scroll', requestTick, { passive: true });
     }
 
-    // Particles
+    // Particles - Reduced for Mobile
     function initParticles() {
       const particlesContainer = document.getElementById('particles');
+      const particleCount = isMobile ? 20 : 50;
       
-      for (let i = 0; i < 50; i++) {
+      for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
         particle.className = 'particle';
         particle.style.left = Math.random() * 100 + '%';
@@ -2286,42 +2409,186 @@
       }
     }
 
-    // Custom Cursor
+    // Custom Cursor - Desktop Only
     function initCustomCursor() {
       const cursor = document.getElementById('cursor');
       
-      if (window.innerWidth > 768) {
-        document.addEventListener('mousemove', (e) => {
+      if (isMobile || window.innerWidth <= 768) {
+        cursor.style.display = 'none';
+        return;
+      }
+      
+      document.addEventListener('mousemove', (e) => {
+        requestAnimationFrame(() => {
           cursor.style.left = e.clientX + 'px';
           cursor.style.top = e.clientY + 'px';
         });
-        
-        document.querySelectorAll('a, button').forEach(element => {
-          element.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-          element.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-        });
-      } else {
-        cursor.style.display = 'none';
-      }
+      });
+      
+      document.querySelectorAll('a, button').forEach(element => {
+        element.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+        element.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+      });
     }
 
-    // Mobile Menu
+    // Mobile Menu - Enhanced Touch
     function initMobileMenu() {
       const toggle = document.getElementById('mobileMenuToggle');
       const nav = document.getElementById('nav');
+      let startX = 0;
+      let startY = 0;
       
       toggle.addEventListener('click', () => {
         nav.classList.toggle('active');
+        document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+        
+        if (isMobile && navigator.vibrate) {
+          navigator.vibrate(10);
+        }
       });
       
+      // Close menu on link click
       document.querySelectorAll('.nav-link, .nav-rsvp').forEach(link => {
         link.addEventListener('click', () => {
           nav.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      });
+      
+      // Swipe to close menu
+      if (isMobile) {
+        nav.addEventListener('touchstart', (e) => {
+          startX = e.touches[0].clientX;
+          startY = e.touches[0].clientY;
+        }, { passive: true });
+        
+        nav.addEventListener('touchmove', (e) => {
+          if (!startX || !startY) return;
+          
+          const diffX = startX - e.touches[0].clientX;
+          const diffY = startY - e.touches[0].clientY;
+          
+          // Swipe right to close
+          if (Math.abs(diffX) > Math.abs(diffY) && diffX < -50) {
+            nav.classList.remove('active');
+            document.body.style.overflow = '';
+            startX = 0;
+            startY = 0;
+          }
+        }, { passive: true });
+      }
+    }
+
+    // Touch Interactions
+    function initTouchInteractions() {
+      if (!isMobile) return;
+      
+      // Add touch feedback to all interactive elements
+      const interactiveElements = document.querySelectorAll('button, a, .gallery-item, .schedule-card, .registry-card');
+      
+      interactiveElements.forEach(element => {
+        element.addEventListener('touchstart', function() {
+          this.style.transform = 'scale(0.95)';
+        }, { passive: true });
+        
+        element.addEventListener('touchend', function() {
+          this.style.transform = '';
+        }, { passive: true });
+      });
+      
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            const headerHeight = document.querySelector('.site-header').offsetHeight;
+            const targetPosition = target.offsetTop - headerHeight - 20;
+            
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
         });
       });
     }
 
-    // Forms
+    // Mobile Optimizations
+    function optimizeForMobile() {
+      if (!isMobile) return;
+      
+      // Lazy load images when they're added
+      if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              if (img.dataset.src) {
+                img.src = img.dataset.src;
+                img.removeAttribute('data-src');
+                observer.unobserve(img);
+              }
+            }
+          });
+        });
+        
+        // Observe all images with data-src
+        document.querySelectorAll('img[data-src]').forEach(img => {
+          imageObserver.observe(img);
+        });
+      }
+      
+      // Disable hover effects on mobile
+      document.body.classList.add('touch-device');
+      
+      // Add CSS for touch devices
+      const style = document.createElement('style');
+      style.innerHTML = `
+        .touch-device .gallery-item:hover img,
+        .touch-device .timeline-image:hover img,
+        .touch-device .card:hover {
+          transform: none;
+        }
+        
+        .touch-device .gallery-overlay {
+          opacity: 1;
+          background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.7));
+        }
+        
+        .mobile-device .particle {
+          width: 3px;
+          height: 3px;
+        }
+        
+        .mobile-device .hero-title {
+          font-size: clamp(2.5rem, 8vw, 4rem);
+        }
+        
+        .mobile-device .countdown-item {
+          min-width: 80px;
+          padding: 15px;
+        }
+        
+        .mobile-device .countdown-number {
+          font-size: 2rem;
+        }
+        
+        .ios-device input,
+        .ios-device select,
+        .ios-device textarea {
+          font-size: 16px; /* Prevents zoom on iOS */
+        }
+      `;
+      document.head.appendChild(style);
+      
+      // Optimize animations for mobile
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.body.classList.add('reduced-motion');
+      }
+    }
+
+    // Forms - Enhanced for Mobile
     function initForms() {
       // RSVP Form
       const rsvpForm = document.getElementById('rsvpForm');
@@ -2333,6 +2600,13 @@
         if (rsvpChildren.checked) {
           childrenDetails.classList.remove('collapsed');
           childrenDetails.classList.add('expanded');
+          
+          // Scroll to show expanded section on mobile
+          if (isMobile) {
+            setTimeout(() => {
+              childrenDetails.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 300);
+          }
         } else {
           childrenDetails.classList.remove('expanded');
           childrenDetails.classList.add('collapsed');
@@ -2341,6 +2615,11 @@
       
       rsvpForm.addEventListener('submit', (e) => {
         e.preventDefault();
+        
+        // Haptic feedback
+        if (isMobile && navigator.vibrate) {
+          navigator.vibrate([50, 50, 50]);
+        }
         
         // Collect form data
         const formData = {
@@ -2369,10 +2648,19 @@
           : '¡Gracias! Su RSVP ha sido recibido.';
         rsvpMessage.className = 'form-message success';
         
+        // Scroll to message on mobile
+        if (isMobile) {
+          rsvpMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        
         // Reset form
-        rsvpForm.reset();
-        childrenDetails.classList.remove('expanded');
-        childrenDetails.classList.add('collapsed');
+        setTimeout(() => {
+          rsvpForm.reset();
+          childrenDetails.classList.remove('expanded');
+          childrenDetails.classList.add('collapsed');
+          rsvpMessage.className = 'form-message';
+          rsvpMessage.textContent = '';
+        }, 5000);
       });
       
       // Guestbook Form
@@ -2384,9 +2672,10 @@
         const entries = JSON.parse(localStorage.getItem('guestbookEntries') || '[]');
         guestbookEntries.innerHTML = '';
         
-        entries.slice(-5).reverse().forEach(entry => {
+        entries.slice(-5).reverse().forEach((entry, index) => {
           const entryDiv = document.createElement('div');
           entryDiv.className = 'guestbook-entry';
+          entryDiv.style.animationDelay = `${index * 0.1}s`;
           entryDiv.innerHTML = `
             <p class="guestbook-message">${entry.message}</p>
             <p class="guestbook-author">- ${entry.name}</p>
@@ -2411,32 +2700,49 @@
         entries.push(entry);
         localStorage.setItem('guestbookEntries', JSON.stringify(entries));
         
+        // Haptic feedback
+        if (isMobile && navigator.vibrate) {
+          navigator.vibrate(50);
+        }
+        
         guestbookForm.reset();
         loadGuestbookEntries();
       });
     }
 
-    // Animations
+    // Animations - Optimized for Mobile
     function initAnimations() {
       const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: isMobile ? 0.05 : 0.1,
+        rootMargin: isMobile ? '0px 0px -30px 0px' : '0px 0px -50px 0px'
       };
       
       const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry, index) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
+            // Stagger animations on mobile
+            if (isMobile) {
+              setTimeout(() => {
+                entry.target.classList.add('visible');
+              }, index * 50);
+            } else {
+              entry.target.classList.add('visible');
+            }
           }
         });
       }, observerOptions);
       
-      document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in, .timeline-item, .schedule-card').forEach(element => {
+      // Observe fewer elements on mobile for performance
+      const selector = isMobile 
+        ? '.section-title, .timeline-item, .schedule-card'
+        : '.fade-in, .slide-in-left, .slide-in-right, .scale-in, .timeline-item, .schedule-card';
+      
+      document.querySelectorAll(selector).forEach(element => {
         observer.observe(element);
       });
     }
 
-    // Music Player
+    // Music Player - Mobile Friendly
     function initMusicPlayer() {
       const musicToggle = document.getElementById('musicToggle');
       let isPlaying = false;
@@ -2444,8 +2750,22 @@
       musicToggle.addEventListener('click', () => {
         isPlaying = !isPlaying;
         musicToggle.textContent = isPlaying ? '⏸️' : '▶️';
+        
+        // Haptic feedback
+        if (isMobile && navigator.vibrate) {
+          navigator.vibrate(10);
+        }
+        
         // Audio functionality would be implemented here
+        // Note: Auto-play is restricted on mobile devices
       });
+      
+      // Hide music player on mobile if preferred
+      if (isMobile && window.innerWidth < 400) {
+        document.querySelector('.music-player').style.bottom = '10px';
+        document.querySelector('.music-player').style.right = '10px';
+        document.querySelector('.music-player').style.transform = 'scale(0.9)';
+      }
     }
   </script>
 </body>
